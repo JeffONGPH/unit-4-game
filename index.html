@@ -1,0 +1,154 @@
+<!DOCTYPE HTML>
+
+<html>
+<head>
+
+<title>Star Wars RPG</title>
+
+<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+
+<link rel="stlyesheet" href="assets/css/reset.css">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+<h1> Star Wars RPG </h1>
+<h2> Pick a character to start!</h2>
+
+    <div class="container">
+
+<!-- Characters -->
+
+            <div class="row">
+                
+                <div clas="col-md-12 col-lg-12 character-choices">
+
+                    <span class="characters" id="obiwan">
+                            <p>Obi-wan Kenobi</p>
+
+                        <img src="assets/images/obiwan.jpg">
+
+                       
+                        <p class="health">150</p>
+                    </span>
+
+
+                    <span class="characters" id="yoda">
+                            <p>Master Yoda</p>
+                            <img src="assets/images/yoda.jpg">
+                            <p class="health">100</p>
+
+                           
+                    </span>
+
+
+                    <span class="characters" id="maul">
+                        <p>Darth Maul</p>
+                            <img src="assets/images/darth-maul.jpg">
+                            <p class="health">120</p>
+
+                            
+                    </span>
+
+
+                    <span class="characters" id="vader">
+                            <p>Darth Vader</p>
+                            <img src="assets/images/vader.jpg">
+                            <p class="health">160</p>
+                            
+                    </span>
+
+                </div>
+                
+            </div>
+
+ <!-- Your character -->
+
+            <div class="row">
+
+                <div class="col-md-12 col-lg-12 attacker">
+
+                    <h2> Your Character</h2>
+
+
+
+                </div>
+                </div>
+
+
+<!-- Enemies available for attack-->
+                <div class="row">
+
+                        <div class="col-md-12 col-lg-12 enemy-choices">
+
+                                <h2> Enemies Available To Attack</h2>
+            
+            
+            
+                            </div>
+        
+                    </div>
+
+
+
+<!-- Fight section -->
+
+                    <div class="row">
+
+                            <div class="col-md-12 col-lg-12">
+
+                                    <h2> Fight Section</h2>
+                                    <button type="button" class="btn btn-danger attack">Attack</button>
+                
+                
+                
+                                </div>
+        
+                        </div>
+
+
+
+<!-- Defender -->
+
+<div class="row">
+
+        <div class="col-md-12 col-lg-12 defender">
+
+                <h2> Defender</h2>
+
+
+
+            </div>
+
+    </div>
+
+    <!-- Message & Restart Button -->
+
+    <div class="row">
+
+            <div class="col-md-12 col-lg-12">
+    
+                   <div id="message"></div>
+                   <button type="button" class="btn btn-default">Restart</button>
+
+    
+    
+    
+                </div>
+    
+        </div>
+
+
+
+
+
+
+
+    </div>
+<script src="assets/javascript/game.js"></script>
+</body>
+
+</html>
