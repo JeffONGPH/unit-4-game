@@ -1,14 +1,66 @@
-
-
-img{height:100px;
+body {
+    background-image: url("../images/background.jpg");
+    background-size: cover;
 }
 
-span{ float: left;
-   border: solid green 3.5px;
-   margin-right: 3px;
+h1 {
+    color: yellow;
+    font-size: 70;
+    text-align: center;
 }
 
-p {text-align: center;
+h2 {
+    color: white;
+    font-size: 40;
+    background: radial-gradient(orange, black);
+    width: fit-content;
+}
 
+p {
+    color: black;
+    font-weight: bold;
+}
 
+#message {
+    color: white;
+    font-size: 22px;
+}
+
+img {
+    height: 100px;
+    margin: 9px;
+}
+
+span {
+    float: left;
+    border: solid green 3.5px;
+    margin: 3px;
+}
+
+.characters {
+    background-color: white;
+}
+
+.chosen {
+    background-color: turquoise;
+}
+
+.enemies {
+    background-color: lightcoral;
+}
+
+.enemy-chosen {
+    background-color: red;
+}
+
+p {
+    text-align: center;
+}
+
+#message {
+    color: black;
+    background: white;
+    width: fit-content;
+    margin-top: 30px;
+    padding: 5px;
 }
