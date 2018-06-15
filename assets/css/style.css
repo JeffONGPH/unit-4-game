@@ -5,13 +5,11 @@ body {
 
 h1 {
     color: yellow;
-    font-size: 70;
     text-align: center;
 }
 
 h2 {
     color: white;
-    font-size: 40;
     background: radial-gradient(orange, black);
     width: fit-content;
 }
@@ -23,11 +21,10 @@ p {
 
 #message {
     color: white;
-    font-size: 22px;
 }
 
 img {
-    height: 100px;
+    height:90px;
     margin: 9px;
 }
 
@@ -41,12 +38,18 @@ span {
     background-color: white;
 }
 
+.characters :hover {background-color: turquoise;
+}
+
 .chosen {
     background-color: turquoise;
 }
 
 .enemies {
     background-color: lightcoral;
+}
+
+.enemies :hover {background-color: red;
 }
 
 .enemy-chosen {
@@ -60,7 +63,5 @@ p {
 #message {
     color: black;
     background: white;
-    width: fit-content;
-    margin-top: 30px;
-    padding: 5px;
+    padding: 3px;
 }

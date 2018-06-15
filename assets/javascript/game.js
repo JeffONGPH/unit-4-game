@@ -9,23 +9,23 @@ var obiwan = {
 
 var yoda = {
     name: "Master Yoda",
-    health: 60,
-    initialDamage: 15,
-    damage: 15
+    health: 90,
+    initialDamage: 25,
+    damage: 25
 };
 
 var maul = {
     name: "Darth Maul",
-    health: 200,
-    initialDamage: 18,
-    damage: 18
+    health: 120,
+    initialDamage: 12,
+    damage: 12
 };
 
 var vader = {
     name: "Darth Vader",
-    health: 100,
-    initialDamage: 7,
-    damage: 7
+    health: 150,
+    initialDamage: 9,
+    damage: 9
 };
 
 var chosen = {};
@@ -163,14 +163,14 @@ $(document).ready(function () {
 
 
                 if (chosen.health > 0) {
-                    chosen.health = chosen.health - defender.damage
+                    chosen.health = chosen.health - defender.damage;
                     $(".chosen").children(".health").html(chosen.health)
                     $("#message").html("You attacked " + defender.name + " for " + chosen.damage + " Damage <br>" +
                         defender.name + " attacked you back for " + defender.damage + " Damage ");
                 } else if (chosen.health <= 0) {
                     chosen.health = 0;
                     gameOver = true;
-                    $("#message").html("You have been defeated...Game Over!")
+                    $("#message").html("You have been defeated...Game Over!");
                     $(".restart").show();
                 }
 
@@ -181,23 +181,24 @@ $(document).ready(function () {
                 }
 
 
-            }  else  if (defenderChosen == true && defender.health < 0) {
+            } else if (defenderChosen == true && defender.health <= 0) {
+                defender.health = 0;
                 wins++;
-                $(".enemy-chosen").hide()
+                $(".enemy-chosen").hide();
                 defenderChosen = false;
-                if (wins < 3){
+                if (wins < 3) {
                     $("#message").html("You have defeated " + defender.name + "! " + "Pick your next victim! ")
-                }
-                else {
+                } else {
                     $("#message").html("All Enemies Killed! " + "You Won!")
                     gameOver = true;
                     $(".restart").show();
                 }
-                } else if (choiceMade == true && defenderChosen == false) {$("#message").html("Please chose an enemy to begin")
-            
+            } else if (choiceMade == true && defenderChosen == false) {
+                $("#message").html("Please chose an enemy to begin")
+
             }
         }
-        chosen.damage = chosen.initialDamage + chosen.damage
+        chosen.damage = chosen.initialDamage + chosen.damage;
     }); // attack button
 
     // RESTART
